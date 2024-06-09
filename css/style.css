@@ -1,0 +1,83 @@
+/* & general styling */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color: #067186;
+    
+}
+::selection{
+    background-color: var(--main-color);
+    color: white;
+}   
+
+
+
+section{
+    background-color: var(--main-color);
+}
+.container span{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(110, 108, 108);
+    letter-spacing: 15px;
+    width: 85%;
+    height: 75px;
+    margin-top: 5px;
+    background-image: url(../images/1.jfif);
+    background-size: cover;
+}
+.btn-info {
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-bg: var(--main-color);
+    --bs-btn-hover-border-color: var(--main-color);
+    --bs-btn-active-bg: var(--main-color);
+    --bs-btn-active-border-color: var(--main-color);
+    --bs-btn-disabled-bg: var(--main-color);
+    --bs-btn-disabled-border-color: var(--main-color);
+    height: 80px;
+}
+
+.item-btn{
+    height: auto;
+    position: absolute;
+   left: 68%;
+    top: 64%;
+}
+
+@media only screen and (max-width: 600px) {
+    .item-btn{
+        height: auto;
+        position: absolute;
+       left: 63%;
+        top: 67%;
+    }
+  }
+
+form{
+    position: relative;
+    box-shadow: 0 0 10px 0 black;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--main-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
